@@ -1,0 +1,15 @@
+Dear {{ .Recipient }}
+
+You are the lucky winner of {{ .Quantity }} crates of Nuka cola.
+
+Please respond with accurate coordinates for your current place of shelter
+for immediate delivery.
+
+Best regards {{ .EvilCorp }}
+
+
+{{if (gt .Quantity 5) }}
+Disclaimer: Nuka-Cola contains excessive amounts of caffeine and 120% of the
+recommended daily value of sugar, making it decisively unhealthy for extended
+consumption.
+{{ end }}
