@@ -11,14 +11,14 @@ To run tests, you can do `make test`
 ## Usage
 
 ```sh
-usage: tomplater -f deployment.yml.tmpl -i data.yml -c myconf.toml
+usage: tomplater -f deployment.yml.tmpl -i data.toml -c myconf.toml
 
 -c string
 Configuration file (TOML document)
 -f string
 Input template (go template file)
 -i string
-Data file (TOMLdocument)
+Data file (TOML document)
 ```
 
 This program assumes the following:
