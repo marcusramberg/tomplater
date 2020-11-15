@@ -11,9 +11,9 @@ import (
 
 // TemplateRenderer is glue between go-toml and text/template
 type TemplateRenderer struct {
-	templateFile string
-	dataFile     string
-	configFile   string
+	TemplateFile string
+	DataFile     string
+	ConfigFile   string
 }
 
 // NewTemplateRenderer is TemplateRenderer constructor
@@ -51,17 +51,17 @@ func getOutput(configFile string) (string, error) {
 
 }
 
-// Render is responsible for Rendering file to sepcified output.
+// Render is responsible for Rendering file to specified output.
 func (t *TemplateRenderer) Render() error {
-	template, err := getTemplate(t.templateFile)
+	template, err := getTemplate(t.TemplateFile)
 	if err != nil {
 		return err
 	}
-	data, err := getData(t.dataFile)
+	data, err := getData(t.DataFile)
 	if err != nil {
 		return err
 	}
-	output, err := getOutput(t.configFile)
+	output, err := getOutput(t.ConfigFile)
 	if err != nil {
 		return err
 	}

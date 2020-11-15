@@ -10,9 +10,9 @@ import (
 
 func TestCreate(t *testing.T) {
 	renderer := NewTemplateRenderer("a", "b", "c")
-	require.Equal(t, renderer.templateFile, "a")
-	require.Equal(t, renderer.dataFile, "b")
-	require.Equal(t, renderer.configFile, "c")
+	require.Equal(t, renderer.TemplateFile, "a")
+	require.Equal(t, renderer.DataFile, "b")
+	require.Equal(t, renderer.ConfigFile, "c")
 }
 
 func TestRender(t *testing.T) {

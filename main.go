@@ -12,7 +12,7 @@ func main() {
 
 	templateFile := flag.String("f", "", "Input template (go template file)")
 	dataFile := flag.String("i", "", "Data file (TOML document)")
-	configFile := flag.String("c", "", "Configuration file (TOML document)")
+	configFile := flag.String("c", "", "Configuration file (TOML document). Must contain output_file key")
 
 	flag.Parse()
 	if *templateFile == "" || *dataFile == "" || *configFile == "" {
