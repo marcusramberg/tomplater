@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"templater/pkg"
+	"tomplater/pkg"
 )
 
 func main() {
@@ -30,7 +30,7 @@ func main() {
 
 func printUsage(reason string) {
 	fmt.Println(reason)
-	fmt.Printf("\nusage: templater -f deployment.yml.tmpl -i data.yml -c myconf.toml\n\n")
+	fmt.Printf("\nusage: tomplater -f deployment.yml.tmpl -i data.toml -c myconf.toml\n\n")
 	flag.PrintDefaults()
 	os.Exit(1)
 }

@@ -1,17 +1,17 @@
-# Templater
+# Tomplater
 
 Simple TOML based go template renderer.
 
 ## Build
 
-Run `make` to build bin/templater
+Run `make` to build bin/tomplater, and copy it somewhere in your \$PATH
 
 To run tests, you can do `make test`
 
 ## Usage
 
 ```sh
-usage: templater -f deployment.yml.tmpl -i data.yml -c myconf.toml
+usage: tomplater -f deployment.yml.tmpl -i data.yml -c myconf.toml
 
 -c string
 Configuration file (TOML document)
@@ -32,7 +32,7 @@ This program assumes the following:
 
 ## Improvements
 
-- By default, it would be nicer if Templater defaulted to stdin and stdout for input/output
+- By default, it would be nicer if Tomplater defaulted to stdin and stdout for input/output
 - Unless we come up with some more configuration, it would probably be nicer to specify the output directly as a parameter.
 - Check for existing file and only overwrite with -force flag or similar.
 - Support long versions of the flags?

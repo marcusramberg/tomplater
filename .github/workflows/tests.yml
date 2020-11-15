@@ -25,4 +25,4 @@ jobs:
       - name: Tests with coverage
         run: make test-coverage
       - name: Build and run
-        run: make && ./bin/templater -f ./testdata/example.txt.tmpl -i ./testdata/data.toml -c ./testdata/config.toml
+        run: make && ./bin/tomplater -f ./testdata/example.txt.tmpl -i ./testdata/data.toml -c ./testdata/config.toml
